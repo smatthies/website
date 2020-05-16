@@ -1,0 +1,359 @@
+/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/**
+ * @section Base Styles
+ */
+/* line 5, src/sass/components/_base.scss */
+.white {
+  background-color: white;
+  color: black;
+  -webkit-transition: ease .6s;
+  transition: ease .6s;
+}
+
+/* line 11, src/sass/components/_base.scss */
+.black {
+  background-color: black;
+  color: white;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+/* line 17, src/sass/components/_base.scss */
+body {
+  margin: 0px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* line 22, src/sass/components/_base.scss */
+div {
+  padding: 5% 50px 4% 10%;
+}
+
+/* line 25, src/sass/components/_base.scss */
+header {
+  position: relative;
+  height: 33vh;
+}
+
+/* line 31, src/sass/components/_base.scss */
+#hiContainer {
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 37, src/sass/components/_base.scss */
+h1 {
+  font-size: 4em;
+  font-weight: 300;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 44, src/sass/components/_base.scss */
+h2 {
+  position: relative;
+  margin-right: 20px;
+}
+
+/* line 49, src/sass/components/_base.scss */
+footer {
+  position: relative;
+  background-color: #55F4D7;
+  padding: 2% 10% 2% 20%;
+  color: black;
+}
+
+/* line 57, src/sass/components/_base.scss */
+.card {
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+/* line 62, src/sass/components/_base.scss */
+.right {
+  margin-left: 35%;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+/* line 67, src/sass/components/_base.scss */
+.left {
+  margin-left: 5%;
+  -webkit-transition: ease .4s;
+  transition: ease .4s;
+}
+
+/* line 72, src/sass/components/_base.scss */
+.hi {
+  height: 60%;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* line 82, src/sass/components/_base.scss */
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* line 88, src/sass/components/_base.scss */
+li {
+  padding-left: 1em;
+  text-indent: -1.5em;
+}
+
+/* line 94, src/sass/components/_base.scss */
+.card li:before {
+  content: "</";
+  padding-right: 5px;
+}
+
+/* line 99, src/sass/components/_base.scss */
+.card li.active:before {
+  content: "<";
+}
+
+/* line 103, src/sass/components/_base.scss */
+.card li:after {
+  content: " >";
+  padding-right: 5px;
+}
+
+/* line 107, src/sass/components/_base.scss */
+.main li {
+  line-height: 2;
+}
+
+/* line 110, src/sass/components/_base.scss */
+.main li:before {
+  content: "_ ";
+  padding-right: 5px;
+}
+
+/* line 115, src/sass/components/_base.scss */
+.main {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 122, src/sass/components/_base.scss */
+.block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* line 126, src/sass/components/_base.scss */
+.hoverImg {
+  height: 180%;
+  position: absolute;
+  z-index: 2;
+  top: 20vh;
+  left: 15%;
+}
+
+/* line 134, src/sass/components/_base.scss */
+footer img.hoverImg {
+  top: initial;
+  bottom: 0px;
+  height: 120%;
+}
+
+/* line 141, src/sass/components/_base.scss */
+.hoverImg.right {
+  left: 65%;
+  margin: 0;
+  -webkit-transition: cubic-bezier(0.84, -0.01, 0.07, 0.96) 0.6s;
+  transition: cubic-bezier(0.84, -0.01, 0.07, 0.96) 0.6s;
+}
+
+/* line 147, src/sass/components/_base.scss */
+.hoverImg.left {
+  margin: 0;
+  left: 15%;
+  -webkit-transition: cubic-bezier(0.84, -0.01, 0.07, 0.96) 0.6s;
+  transition: cubic-bezier(0.84, -0.01, 0.07, 0.96) 0.6s;
+}
+
+/* line 154, src/sass/components/_base.scss */
+.logos {
+  padding: 10px 0 0 0;
+}
+
+/* line 158, src/sass/components/_base.scss */
+.logos img {
+  padding-right: 15px;
+}
+
+/* line 162, src/sass/components/_base.scss */
+.switchContainer {
+  float: right;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  justify-items: center;
+}
+
+/* line 169, src/sass/components/_base.scss */
+.switchContainer > span {
+  padding-right: 15px;
+  margin: auto;
+}
+
+/* line 174, src/sass/components/_base.scss */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* line 181, src/sass/components/_base.scss */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 187, src/sass/components/_base.scss */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  border: solid white 1px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 200, src/sass/components/_base.scss */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* line 212, src/sass/components/_base.scss */
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+/* line 216, src/sass/components/_base.scss */
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+/* line 223, src/sass/components/_base.scss */
+.slider.round {
+  border-radius: 34px;
+}
+
+/* line 227, src/sass/components/_base.scss */
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* line 231, src/sass/components/_base.scss */
+h2::after {
+  display: block;
+  content: '';
+  width: 5%;
+  height: 5px;
+  background: #55F4D7;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+/* line 243, src/sass/components/_base.scss */
+.private {
+  display: none;
+}
+
+/* line 247, src/sass/components/_base.scss */
+#footerImg {
+  display: none;
+}
+
+@media only screen and (max-width: 1110px) {
+  /* line 253, src/sass/components/_base.scss */
+  .hoverImg {
+    display: none !important;
+  }
+  /* line 257, src/sass/components/_base.scss */
+  .left {
+    margin-left: 10%;
+  }
+  /* line 261, src/sass/components/_base.scss */
+  h1 {
+    font-size: 3em;
+  }
+  /* line 265, src/sass/components/_base.scss */
+  .right {
+    margin-left: 10%;
+  }
+  /* line 269, src/sass/components/_base.scss */
+  .logos img {
+    position: relative;
+  }
+  /* line 273, src/sass/components/_base.scss */
+  footer {
+    padding: 20px 10% 10% 20%;
+  }
+  /* line 276, src/sass/components/_base.scss */
+  #cardContainer {
+    padding: 0;
+  }
+  /* line 279, src/sass/components/_base.scss */
+  #hiContainer {
+    padding-left: 0;
+  }
+  /* line 282, src/sass/components/_base.scss */
+  .switchContainer {
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 295, src/sass/components/_base.scss */
+  .logos img {
+    position: relative;
+    width: 30px;
+  }
+  /* line 299, src/sass/components/_base.scss */
+  h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}
