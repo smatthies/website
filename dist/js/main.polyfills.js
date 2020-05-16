@@ -1,4 +1,4 @@
-/*! project-name v0.0.1 | (c) 2020 YOUR NAME | MIT License | http://link-to-your-git-repo.com */
+/*! website v0.0.1 | (c) 2020 Sarah Matthies | MIT License |  */
 /**
  * Element.matches() polyfill (simple version)
  * https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill
@@ -31,7 +31,7 @@ function switchMode (){
 		header[0].classList.add("white");
 
 		//change image and position
-		profilePicture.src = "/img/sarah_privat.png";
+		profilePicture.src = "./img/sarah_privat.png";
 		profilePicture.classList.remove("left");
 		profilePicture.classList.add("right");
 
@@ -64,7 +64,7 @@ function switchMode (){
 		header[0].classList.add("black");
 
 		//change image and position
-		profilePicture.src = "/img/sarah_business.png";
+		profilePicture.src = "./img/sarah_business.png";
 		profilePicture.classList.remove("right");
 		profilePicture.classList.add("left");
 

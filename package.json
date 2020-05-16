@@ -1,16 +1,13 @@
 {
-	"name": "project-name",
+	"name": "website",
 	"version": "0.0.1",
-	"description": "A description for your project.",
-	"main": "./dist/your-main-js-file.js",
+	"description": "my own website to showcase some projects",
 	"author": {
-		"name": "YOUR NAME",
-		"url": "http://link-to-your-website.com"
+		"name": "Sarah Matthies"
 	},
 	"license": "MIT",
 	"repository": {
-		"type": "git",
-		"url": "http://link-to-your-git-repo.com"
+		"type": "git"
 	},
 	"boilerplate": {
 		"version": "2.2.6",
