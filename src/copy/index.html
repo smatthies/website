@@ -1,96 +1,146 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Sarah Matthies</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body class="white">
-	<header class="black">
-		<div class="switchContainer">
-			<span id="switchLabel">Privater Modus</span>
-		<label class="switch">
-			<input id="privateMode" aria-labelledby="switchLabel" type="checkbox" onclick="switchMode()">
-			<span id="slider" class="slider white round"></span>
-		  </label>
-		</div>
-		<div id="hiContainer" class="hi right"><h1 id="hi">Hi!</h1></div>
-		<img alt="einBildvonMir" id="profilePicture" class="hoverImg left" src="./img/sarah_business.png">
-	</header> 
-	<div id="cardContainer" class="card right">
-		<h1 id="IAm">Ich bin Sarah.</h1>
-		<h2>UX Design & Webdevelopment</h2>
-		<div>
-		<p>Die Kurzfassung</p>
-		<ul>
-			<li>B.Sc Wirtschaftsinformatik</li>
-			<li>Softwareentwicklerin</li>
-			<li>M.Sc Human Computer Interaction</li>
-			<li class="active">UX & Product Designerin</li>
-		</ul>
-	</div>
-	</div>
-	<div class="main">
-	<div class="block">
-		<h2>Was ich sonst so gemacht habe</h2>
-		<ul>
-			<li>Hackathon Symbioticon</li>
-			<li>YALLAH! You all are hackers</li>
-			<li>WirVsVirus Hackathon</li>
-			<li>Forschungsaufenthalt Waseda University Tokyo</li>
-			<li>interaktive Garderoben</li>
-			<li>AR im Schockraum</li>
-			<li>Robotik in der Altenpflege</li>
-			<li>Role Model it-for-girls</li>
-		</ul>
-	</div>
-	<div class="block">
-		<h2>Was ich sonst so mache</h2>
-		<ul>
-			<li>Usability & Accessibility</li>
-			<li>React</li>
-			<li>Animationen</li>
-			<li>Relationale Datenbanken</li>
-			<li>Java</li>
-		</ul>
-	</div>
-	<div class="block private">
-		<h2>Dinge, über die ich gerne rede</h2>
-		<ul>
-			<li>Accessibility im Internet</li>
-			<li>Well-Being</li>
-			<li>Possibility driven design</li>
-			<li>Interaktion mit Robotern</li>
-			<li>Stifte</li>
-			<li>Animal Crossing</li>
-			<li>Die Bücher von Jonathan Safran Foer und die Interaktion mit ihnen</li>
-		</ul>
-	</div> 
-	<div class="block private">
-		<h2>Dinge, die ich gern mag</h2>
-		<ul>
-			<li>Handlettering</li>
-			<li>Makermovement</li>
-			<li>Yoga</li>
-			<li>Corgis</li>
-			<li>Zeichnen</li>
-		</ul>
-	</div>
-	</div>
-	<footer >
-		<h2 id="whereToFind" >Wo ich sonst zu finden bin</h2>
-		<div class="logos">
-			<img alt="Linkedin" src="./svg/linkedin.svg">
-			<img alt="Github" src="./svg/github.svg">
-			<img alt="Codepen" src="./svg/codepen.svg">
-			<img alt="Twitter" src="./svg/twitter.svg">
-		</div>
-		<img alt="einBildVonMir" id="footerImg" class="hoverImg right" src="./img/sarah_bottom.png">
-	</footer>
-	<!-- Scripts -->
-	<script src="js/detects.js"></script>
-	<script src="js/another-file.js"></script>
-	<script src="js/main.polyfills.js"></script>
-</body>
+  <head>
+    <title>Sarah Matthies</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="white">
+    <header class="black">
+      <div class="switchContainer">
+        <span id="switchLabel">Privater Modus</span>
+        <label class="switch">
+          <input
+            id="privateMode"
+            aria-labelledby="switchLabel"
+            type="checkbox"
+            onclick="switchMode()"
+          />
+          <span id="slider" class="slider white round"></span>
+        </label>
+      </div>
+      <div id="hiContainer" class="hi right"><h1 id="hi">Hi!</h1></div>
+      <img
+        alt="einBildvonMir"
+        id="profilePicture"
+        class="hoverImg left"
+        src="./img/sarah_business.png"
+      />
+    </header>
+    <div id="cardContainer" class="card right">
+      <h1 id="IAm">Ich bin Sarah.</h1>
+      <h2>UX Design & Webdevelopment</h2>
+      <div>
+        <p>Die Kurzfassung</p>
+        <ul>
+          <li>B.Sc Wirtschaftsinformatik</li>
+          <li>Softwareentwicklerin</li>
+          <li>M.Sc Human Computer Interaction</li>
+          <li class="active">UX & Product Designerin</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="block">
+        <h2>Was ich sonst so gemacht habe</h2>
+        <ul>
+          <li>Hackathon Symbioticon</li>
+          <li>
+            <a href="./subsite/yallah.html">YALLAH! You all are hackers</a>
+          </li>
+          <li>WirVsVirus Hackathon</li>
+          <li>Forschungsaufenthalt Waseda University Tokyo</li>
+          <li>interaktive Garderoben</li>
+          <li>AR im Schockraum</li>
+          <li>Robotik in der Altenpflege</li>
+          <li>Role Model it-for-girls</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>Was ich sonst so mache</h2>
+        <ul>
+          <li>Usability & Accessibility</li>
+          <li>React</li>
+          <li>Animationen</li>
+          <li>Relationale Datenbanken</li>
+          <li>Java</li>
+        </ul>
+      </div>
+      <div class="block private">
+        <h2>Dinge, über die ich gerne rede</h2>
+        <ul>
+          <li>Accessibility im Internet</li>
+          <li>Well-Being</li>
+          <li>Possibility driven design</li>
+          <li>Interaktion mit Robotern</li>
+          <li>Stifte</li>
+          <li>Animal Crossing</li>
+          <li>
+            Die Bücher von Jonathan Safran Foer und die Interaktion mit ihnen
+          </li>
+        </ul>
+      </div>
+      <div class="block private">
+        <h2>Dinge, die ich gern mag</h2>
+        <ul>
+          <li>Handlettering</li>
+          <li>Makermovement</li>
+          <li>Yoga</li>
+          <li>Corgis</li>
+          <li>Zeichnen</li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <h2 id="whereToFind">Wo ich sonst zu finden bin</h2>
+      <div class="logos">
+        <img alt="Linkedin" src="./svg/linkedin.svg" />
+        <img alt="Github" src="./svg/github.svg" />
+        <img alt="Codepen" src="./svg/codepen.svg" />
+        <img alt="Twitter" src="./svg/twitter.svg" />
+      </div>
+      <img
+        alt="einBildVonMir"
+        id="footerImg"
+        class="hoverImg right"
+        src="./img/sarah_bottom.png"
+      />
+    </footer>
+    <!-- Scripts -->
+    <script src="js/detects.js"></script>
+    <script src="js/fingerprint.min.js"></script>
+    <script src="js/main.polyfills.js"></script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-178415832-1", {
+        storage: "none",
+        clientId: new Fingerprint().get(),
+      });
+      ga("set", "anonymizeIp", true);
+      ga("send", "pageview");
+    </script>
+  </body>
 </html>

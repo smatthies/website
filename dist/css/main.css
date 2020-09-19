@@ -2,46 +2,52 @@
 /**
  * @section Base Styles
  */
-/* line 5, src/sass/components/_base.scss */
+@font-face {
+  font-family: "Sarah Font";
+  src: url(/img/SarahSchrift.ttf) format("truetype");
+}
+
+/* line 10, src/sass/components/_base.scss */
 .white {
   background-color: white;
   color: black;
-  -webkit-transition: ease .6s;
-  transition: ease .6s;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
 }
 
-/* line 11, src/sass/components/_base.scss */
+/* line 16, src/sass/components/_base.scss */
 .black {
   background-color: black;
   color: white;
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
-}
-
-/* line 17, src/sass/components/_base.scss */
-body {
-  margin: 0px;
-  font-family: 'Roboto Mono', monospace;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 
 /* line 22, src/sass/components/_base.scss */
+body {
+  margin: 0px;
+  background-color: pink;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* line 27, src/sass/components/_base.scss */
 div {
   padding: 5% 50px 4% 10%;
 }
 
-/* line 25, src/sass/components/_base.scss */
+/* line 30, src/sass/components/_base.scss */
 header {
   position: relative;
   height: 33vh;
 }
 
-/* line 31, src/sass/components/_base.scss */
+/* line 35, src/sass/components/_base.scss */
 #hiContainer {
   position: absolute;
   bottom: 0;
 }
 
-/* line 37, src/sass/components/_base.scss */
+/* line 41, src/sass/components/_base.scss */
 h1 {
   font-size: 4em;
   font-weight: 300;
@@ -49,41 +55,43 @@ h1 {
   width: 100%;
 }
 
-/* line 44, src/sass/components/_base.scss */
+/* line 48, src/sass/components/_base.scss */
 h2 {
   position: relative;
   margin-right: 20px;
+  font-family: "Sarah Font", sans-serif;
+  font-size: 2em;
 }
 
-/* line 49, src/sass/components/_base.scss */
+/* line 55, src/sass/components/_base.scss */
 footer {
   position: relative;
-  background-color: #55F4D7;
+  background-color: #55f4d7;
   padding: 2% 10% 2% 20%;
   color: black;
 }
 
-/* line 57, src/sass/components/_base.scss */
+/* line 62, src/sass/components/_base.scss */
 .card {
   margin-top: 0%;
   padding-top: 0%;
 }
 
-/* line 62, src/sass/components/_base.scss */
+/* line 67, src/sass/components/_base.scss */
 .right {
   margin-left: 35%;
-  -webkit-transition: ease .4s;
-  transition: ease .4s;
-}
-
-/* line 67, src/sass/components/_base.scss */
-.left {
-  margin-left: 5%;
-  -webkit-transition: ease .4s;
-  transition: ease .4s;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
 }
 
 /* line 72, src/sass/components/_base.scss */
+.left {
+  margin-left: 5%;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+/* line 77, src/sass/components/_base.scss */
 .hi {
   height: 60%;
   margin-bottom: 0%;
@@ -100,48 +108,48 @@ footer {
           align-items: flex-end;
 }
 
-/* line 82, src/sass/components/_base.scss */
+/* line 86, src/sass/components/_base.scss */
 ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
 
-/* line 88, src/sass/components/_base.scss */
+/* line 92, src/sass/components/_base.scss */
 li {
   padding-left: 1em;
   text-indent: -1.5em;
 }
 
-/* line 94, src/sass/components/_base.scss */
+/* line 97, src/sass/components/_base.scss */
 .card li:before {
   content: "</";
   padding-right: 5px;
 }
 
-/* line 99, src/sass/components/_base.scss */
+/* line 102, src/sass/components/_base.scss */
 .card li.active:before {
   content: "<";
 }
 
-/* line 103, src/sass/components/_base.scss */
+/* line 106, src/sass/components/_base.scss */
 .card li:after {
   content: " >";
   padding-right: 5px;
 }
 
-/* line 107, src/sass/components/_base.scss */
+/* line 110, src/sass/components/_base.scss */
 .main li {
   line-height: 2;
 }
 
-/* line 110, src/sass/components/_base.scss */
+/* line 113, src/sass/components/_base.scss */
 .main li:before {
   content: "_ ";
   padding-right: 5px;
 }
 
-/* line 115, src/sass/components/_base.scss */
+/* line 118, src/sass/components/_base.scss */
 .main {
   width: 80%;
   display: -webkit-box;
@@ -155,14 +163,14 @@ li {
       flex-wrap: wrap;
 }
 
-/* line 122, src/sass/components/_base.scss */
+/* line 125, src/sass/components/_base.scss */
 .block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-/* line 126, src/sass/components/_base.scss */
+/* line 129, src/sass/components/_base.scss */
 .hoverImg {
   height: 180%;
   position: absolute;
@@ -171,14 +179,14 @@ li {
   left: 15%;
 }
 
-/* line 134, src/sass/components/_base.scss */
+/* line 137, src/sass/components/_base.scss */
 footer img.hoverImg {
   top: initial;
   bottom: 0px;
   height: 120%;
 }
 
-/* line 141, src/sass/components/_base.scss */
+/* line 143, src/sass/components/_base.scss */
 .hoverImg.right {
   left: 65%;
   margin: 0;
@@ -186,7 +194,7 @@ footer img.hoverImg {
   transition: cubic-bezier(0.84, -0.01, 0.07, 0.96) 0.6s;
 }
 
-/* line 147, src/sass/components/_base.scss */
+/* line 149, src/sass/components/_base.scss */
 .hoverImg.left {
   margin: 0;
   left: 15%;
@@ -194,17 +202,17 @@ footer img.hoverImg {
   transition: cubic-bezier(0.84, -0.01, 0.07, 0.96) 0.6s;
 }
 
-/* line 154, src/sass/components/_base.scss */
+/* line 155, src/sass/components/_base.scss */
 .logos {
   padding: 10px 0 0 0;
 }
 
-/* line 158, src/sass/components/_base.scss */
+/* line 159, src/sass/components/_base.scss */
 .logos img {
   padding-right: 15px;
 }
 
-/* line 162, src/sass/components/_base.scss */
+/* line 163, src/sass/components/_base.scss */
 .switchContainer {
   float: right;
   display: -webkit-inline-box;
@@ -244,8 +252,8 @@ footer img.hoverImg {
   bottom: 0;
   background-color: black;
   border: solid white 1px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* line 200, src/sass/components/_base.scss */
@@ -257,14 +265,14 @@ footer img.hoverImg {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* line 212, src/sass/components/_base.scss */
 input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #2196F3;
-          box-shadow: 0 0 1px #2196F3;
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
 }
 
 /* line 216, src/sass/components/_base.scss */
@@ -287,10 +295,10 @@ input:checked + .slider:before {
 /* line 231, src/sass/components/_base.scss */
 h2::after {
   display: block;
-  content: '';
+  content: "";
   width: 5%;
   height: 5px;
-  background: #55F4D7;
+  background: #55f4d7;
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -307,51 +315,57 @@ h2::after {
 }
 
 @media only screen and (max-width: 1110px) {
-  /* line 253, src/sass/components/_base.scss */
+  /* line 252, src/sass/components/_base.scss */
   .hoverImg {
     display: none !important;
   }
-  /* line 257, src/sass/components/_base.scss */
+  /* line 256, src/sass/components/_base.scss */
   .left {
     margin-left: 10%;
   }
-  /* line 261, src/sass/components/_base.scss */
+  /* line 260, src/sass/components/_base.scss */
   h1 {
     font-size: 3em;
   }
-  /* line 265, src/sass/components/_base.scss */
+  /* line 264, src/sass/components/_base.scss */
   .right {
     margin-left: 10%;
   }
-  /* line 269, src/sass/components/_base.scss */
+  /* line 268, src/sass/components/_base.scss */
   .logos img {
     position: relative;
   }
-  /* line 273, src/sass/components/_base.scss */
+  /* line 272, src/sass/components/_base.scss */
   footer {
     padding: 20px 10% 10% 20%;
   }
-  /* line 276, src/sass/components/_base.scss */
+  /* line 275, src/sass/components/_base.scss */
   #cardContainer {
     padding: 0;
   }
-  /* line 279, src/sass/components/_base.scss */
+  /* line 278, src/sass/components/_base.scss */
   #hiContainer {
     padding-left: 0;
   }
-  /* line 282, src/sass/components/_base.scss */
+  /* line 281, src/sass/components/_base.scss */
   .switchContainer {
     padding-right: 5%;
   }
 }
 
+/* line 286, src/sass/components/_base.scss */
+.subsiteTitle {
+  background-color: #55f4d7;
+  color: black;
+}
+
 @media only screen and (max-width: 400px) {
-  /* line 295, src/sass/components/_base.scss */
+  /* line 292, src/sass/components/_base.scss */
   .logos img {
     position: relative;
     width: 30px;
   }
-  /* line 299, src/sass/components/_base.scss */
+  /* line 296, src/sass/components/_base.scss */
   h2 {
     font-size: 1.2em;
     font-weight: 600;
